@@ -1,0 +1,132 @@
+
+body {
+  font-size: 20px;
+  margin: 0;
+  font-family: 'Helvetica Neue', 'Quicksand', sans-serif;
+  font-weight:300;
+  color: #000;
+  min-height: 100vh;
+  background-color: #FFF11E;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Impact', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+em {
+  font-family: 'Impact', sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+}
+
+section {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 1em;
+  border-top: 4px solid white;
+}
+
+.big {
+  font-size: 1.3em;
+}
+
+.dark_bg {
+  color: white;
+}
+
+#hello {
+  background: #FFF11E;
+  text-align: center;
+  border-top: none;
+}
+
+#hello em {
+  font-family: 'Impact', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-style: normal;
+  margin: 0 0.1em;
+}
+
+img#avatar {
+  width: 300px;
+  height: 300px;
+}
+
+div.links {
+  display: flex;
+  flex-direction: row;
+}
+
+div.links a{
+  width: 1.4em;
+  height: 1.4em;
+  margin: 0 0.3em;
+}
+
+#hello div {
+  margin: 0.8em;
+}
+
+#statement {
+  background-color: #FF3D74;
+  text-align: center;
+}
+
+#experiences {
+  background-color: #FFF11E;
+}
+
+a {
+  color: black;
+}
+
+.dark_bg a {
+  color: white;
+}
+
+a:hover {
+  color: #FF3D74;
+}
+
+.wrap {
+  max-width: 800px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-color: #FF3D74;
+  border-top: 4px solid white;
+}
+footer .copyright{
+  font-size: 0.7em;
+  margin-top: 1em;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 1em;
+}
+
+.things {
+  columns: 2;
+  margin: 40px;
+}
+
+.things p:first-child {
+  margin-top: 0;
+}
