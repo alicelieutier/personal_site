@@ -5,13 +5,13 @@
 }
 
 body {
-  font-size: 20px;
+  font-size: 24px;
   margin: 0;
   font-family: 'Helvetica Neue', 'Quicksand', sans-serif;
   font-weight:300;
   color: black;
   min-height: 100vh;
-  background-color: var(--bright-yellow);
+  background-color: var(--hot-pink);
 }
 
 em {
@@ -31,10 +31,6 @@ section {
 
 .big {
   font-size: 1.3em;
-}
-
-.dark_bg {
-  color: white;
 }
 
 #hello {
@@ -72,29 +68,30 @@ div.links {
 div.links a{
   width: 1.4em;
   height: 1.4em;
-  margin: 0 0.4em;
+  padding: 0.4em;
+}
+
+div.links a:hover{
+  background-color: var(--bright-yellow);
 }
 
 #hello div {
   margin-top: 2em;
 }
 
-#statement {
-  background-color: var(--hot-pink);
+section {
+  background-color: var(--bright-yellow);
+  color: black;
   text-align: center;
 }
 
-a {
+a, a:visited {
   color: black;
 }
 
-.dark_bg a {
+::selection, a:hover {
+  background-color: var(--hot-pink);
   color: white;
-}
-
-a:hover {
-  background-color: var(--bright-yellow);
-  color: black;
 }
 
 .wrap {
@@ -106,12 +103,12 @@ header, footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 15px;
 }
 
 footer .copyright{
   font-size: 0.8em;
-  margin-top: 1em;
+  margin: 0.3em;
 }
 
 .things {
@@ -121,9 +118,4 @@ footer .copyright{
 
 .things p:first-child {
   margin-top: 0;
-}
-
-::selection {
-  background-color: var(--bright-yellow);
-  color: black;
 }
