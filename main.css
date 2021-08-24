@@ -69,6 +69,10 @@ div.links a:hover{
   background-color: var(--bright-yellow);
 }
 
+a, a:visited {
+  color: inherit;
+}
+
 #hello div {
   margin-top: 2em;
 }
@@ -86,12 +90,6 @@ section:nth-child(odd) {
 section:nth-child(even) {
   background: var(--rich-blue);
   color: white;
-  
-  /* border-top: none; */
-}
-
-a, a:visited {
-  color: black;
 }
 
 ::selection, a:hover {
