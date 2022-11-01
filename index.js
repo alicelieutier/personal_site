@@ -12,7 +12,7 @@ function sample(array) {
 }
 
 function greet() {
-  const greetings = ["Bonjour", "Salut", "Hello", "Hi", "Hola", "Hallo", "Selam"]
+  const greetings = ["Bonjour", "Hello", "Hi", "Hola",]
   return sample(greetings)
 }
 
@@ -20,7 +20,7 @@ document.getElementById('moon').innerText = moonPhase(new Date())
 
 function displayGreeting() {
   document.getElementById('greeting').innerText = greet()
-  setTimeout(displayGreeting, 7000)
+  setTimeout(displayGreeting, 10000)
 }
 
 displayGreeting()
