@@ -41,6 +41,27 @@ header {
   padding: 15px;
 }
 
+header .logo a{
+  height: 40px;
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  header .logo a{
+    width: 40px;
+    height: 40px;
+    background-image: url(logo_black.png);
+    background-size: contain;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header .logo img {
+    opacity: 0;
+  }
+}
+
+
 div#avatar {
   width: 400px;
   height: 400px;
