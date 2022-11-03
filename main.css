@@ -1,7 +1,7 @@
 :root {
-  --hot-pink: #fa3e0f;
-  --bright-yellow: #B6B7B2;
-  --rich-blue: #151A20;
+  --accent: #fa3e0f;
+  --light: #B6B7B2;
+  --dark: #151A20;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
   font-weight:300;
   color: black;
   min-height: 100vh;
-  background-color: var(--hot-pink);
+  background-color: var(--accent);
 }
 
 em {
@@ -31,6 +31,14 @@ section {
 
 .big {
   font-size: 1.3em;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
 }
 
 div#avatar {
@@ -62,7 +70,7 @@ div.links a{
 }
 
 div.links a:hover{
-  background-color: var(--bright-yellow);
+  background-color: var(--light);
 }
 
 a, a:visited {
@@ -78,18 +86,18 @@ section {
 }
 
 section:nth-child(odd) {
-  background-color: var(--bright-yellow);
+  background-color: var(--light);
   color: black;
   text-align: center;
 }
 
 section:nth-child(even) {
-  background: var(--rich-blue);
+  background: var(--dark);
   color: white;
 }
 
 ::selection, a:hover {
-  background-color: var(--hot-pink);
+  background-color: var(--accent);
   color: white;
 }
 
@@ -100,23 +108,36 @@ section:nth-child(even) {
 blockquote {
   display: inline-flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  max-width: 1100px;
+  margin: 0;
 }
 
 blockquote::before, blockquote::after {
   font-size: 5em;
-  margin: 0.5em;
+  line-height: 0.4;
+  margin-top: 0.5em;
+  margin-bottom: -0.4em;
+  margin-right: 0.1em;
+  margin-left: 0.1em;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  flex: 1;
 }
+
 blockquote::before {
   content: '“';
 }
+
 blockquote::after {
   content: '”';
 }
 
-header, footer {
+blockquote div {
+  flex: 8;
+  min-width: 400px;
+}
+
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
