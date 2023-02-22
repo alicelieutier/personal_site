@@ -14,7 +14,11 @@
       rel="icon"
       media="(prefers-color-scheme: dark)"
     />
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Montserrat+Alternates:ital,wght@0,200;0,500;1,200;1,500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="main.css">
     <script defer src="index.js"></script>
     <script data-goatcounter="https://alicelieutier.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -32,35 +36,18 @@
     <header>
       <div class="logo"><a href="#"><img height="40px" src="logo_full_name.png" alt="Alice Lieutier"></a></div>
       <div class="links">
-        <a id="blog" href="https://medium.com/@alicelieutier">Blog</a>
-        <a id="email" href="mailto:alice@lieutier.me"><img alt="email" src="email.svg"></a>
-        <a id="github" href="https://github.com/alicelieutier"><img alt="github" src="github.svg"></a>
-        <a id="instagram" href="https://instagram.com/alicelieutier"><img alt="instagram" src="instagram.svg"></a>
-        <a id="linkedin" href="https://linkedin.com/in/alice-lieutier-9476784"><img alt="linkedin" src="linkedin.svg"></a>
+        <a class="blog" href="https://medium.com/@alicelieutier">blog</a>
+        <a class="email" href="mailto:alice@lieutier.me"><img alt="email" src="email.svg"></a>
+        <a class="github" href="https://github.com/alicelieutier"><img alt="github" src="github.svg"></a>
+        <a class="instagram" href="https://instagram.com/alicelieutier"><img alt="instagram" src="instagram.svg"></a>
+        <a class="linkedin" href="https://linkedin.com/in/alice-lieutier-9476784"><img alt="linkedin" src="linkedin.svg"></a>
       </div>
     </header>
     <section class="big">
       <div id="avatar"><img alt="Alice Lieutier avatar" src="new_alice_800.jpg" /></div>
-      <div id="name">
-        <span id="greeting">Hello</span>, my name is <em>Alice Lieutier</em> <span id="moon"></span>
-      </div>
-    </section>
-    <section>
-      <div class="wrap">
-        <h2>💥Building Trust Workshop💥<h2>
-        <h3>Unlock your team&apos;s potential</h3>
-        <p>
-          In this 3 hours workshop, we&apos;ll use reflection and exercises to learn
-          <ul>
-            <li>What trust actually is</li>
-            <li>Why trust promotes collaboration, creativity and growth</li>
-            <li>How to build more trust to become the team everyone wants to be a part of</li>
-          </ul>
-        ✨ You&apos;ll leave feeling <em>inspired</em> and with <em>new insights</em> on how to apply this in your work and life.
-        </p>
-
-        <p>If you are curious about this workshop, or you'd like me to run it at your company, send me an <a id="email" href="mailto:alice@lieutier.me">email</a> or <a href="https://calendly.com/alicelieutier/coffee">schedule a virtual coffee chat</a> with me.</p>
-      </div>  
+      <h1 id="name">
+        Hi, my name is <em>Alice Lieutier</em> <span id="moon"></span>
+      </h1>
     </section>
     <section>
       <div class="wrap">
@@ -80,6 +67,31 @@
       </section>
       <section>
         <div class="wrap">
+          <h2>Building Trust Workshop: Unlock your team&apos;s potential</h2>
+          <p>
+            In this 3 hours workshop, we&apos;ll use reflection and exercises to learn
+            <ul>
+              <li>What trust actually is</li>
+              <li>Why trust promotes collaboration, creativity and growth</li>
+              <li>How to build more trust to become the team everyone wants to be a part of</li>
+            </ul>
+          ✨ You&apos;ll leave feeling <em>inspired</em> and with <em>new insights</em> on how to apply this in your work and life.
+          </p>
+          <br/>
+  
+          <p>If you are curious about this workshop, or you'd like me to run it at your company, send me an <a class="email" href="mailto:alice@lieutier.me">email</a> or schedule a virtual coffee chat with me where I&apos;ll share with you some of the ideas at the heart of the workshop.</p>
+
+
+          <p>If you find it interesting, but you need a different format or a workshop more tailored to your company, don&apos;t hesitate to reach out.</p>
+          <p>I am confident we can create something that fits your needs. </p>
+            
+          <div class="center">
+            <a class="button" href="https://calendly.com/alicelieutier/coffee" type="button">Book a coffee chat</a>
+          </div>
+         </div>  
+      </section>
+      <section>
+        <div class="wrap">
           <blockquote>
             <div>
               <p>Alice is a wonderful, smart, clearheaded & emotionally intelligent coach. In the time I&apos;ve known her (I was a student at Makers Academy), I&apos;ve found that she straddles the line between being rational/ logical and deeply understanding and emotionally aware. She&apos;s open and honest, and has an amazing way of tapping into what you&apos;re experiencing and working with you to disentangle it all and gain clarity. I&apos;ve spoken to Alice about a range of things, from coding to imposter syndrome, to general life and career decisions. Each time, I&apos;ve ended up in a much more clear-headed space, with an action-plan of how to unstick myself from the problem, and a vision of what, to me, feels like the right way to handle my current situation. She&apos;s also a lot of fun, non-judgemental, and a really interesting person with a lot of insight!</p>
@@ -94,14 +106,14 @@
       </section>
     <footer>
       <div class="links">
-        <a id="blog" href="https://medium.com/@alicelieutier">Blog</a>
-        <a id="email" href="mailto:alice@lieutier.me"><img alt="email" src="email.svg"></a>
-        <a id="github" href="https://github.com/alicelieutier"><img alt="github" src="github.svg"></a>
-        <a id="instagram" href="https://instagram.com/alicelieutier"><img alt="instagram" src="instagram.svg"></a>
-        <a id="linkedin" href="https://linkedin.com/in/alice-lieutier-9476784"><img alt="linkedin" src="linkedin.svg"></a>
+        <a class="blog" href="https://medium.com/@alicelieutier">blog</a>
+        <a class="email" href="mailto:alice@lieutier.me"><img alt="email" src="email.svg"></a>
+        <a class="github" href="https://github.com/alicelieutier"><img alt="github" src="github.svg"></a>
+        <a class="instagram" href="https://instagram.com/alicelieutier"><img alt="instagram" src="instagram.svg"></a>
+        <a class="linkedin" href="https://linkedin.com/in/alice-lieutier-9476784"><img alt="linkedin" src="linkedin.svg"></a>
       </div>
       <div class="copyright">
-        &copy; Alice Lieutier 2022 - <a href="https://www.buymeacoffee.com/alicelieutier">☕ buy me a flat white</a>
+        &copy; Alice Lieutier 2023 - <a href="https://www.buymeacoffee.com/alicelieutier">☕ buy me a flat white</a>
       </div>
     </footer>
   </body>

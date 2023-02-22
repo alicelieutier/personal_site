@@ -7,20 +7,5 @@ function moonPhase(date) {
   return phases[Math.floor(moment * 8)];
 }
 
-function sample(array) {
-  return array[Math.floor(Math.random() * array.length)]
-}
-
-function greet() {
-  const greetings = ["Bonjour", "Hello", "Hi", "Hola",]
-  return sample(greetings)
-}
-
 document.getElementById('moon').innerText = moonPhase(new Date())
 
-function displayGreeting() {
-  document.getElementById('greeting').innerText = greet()
-  setTimeout(displayGreeting, 10000)
-}
-
-displayGreeting()

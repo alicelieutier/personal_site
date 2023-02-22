@@ -1,13 +1,15 @@
 :root {
-  --accent: #fa3e0f;
-  --light: #B6B7B2;
-  --dark: #151A20;
+  --accent: hsl(49, 96%, 52%);
+  --light: #f4f4f4;
+  --dark: #111316;
+  --main-font: 'Montserrat Alternates', sans-serif;
+  --title-font: 'EB Garamond', serif;
 }
 
 body {
-  font-size: 24px;
+  font-size: 20px;
   margin: 0;
-  font-family: 'Helvetica Neue', 'Quicksand', sans-serif;
+  font-family: var(--main-font);
   font-weight:300;
   color: black;
   min-height: 100vh;
@@ -15,14 +17,22 @@ body {
 }
 
 em {
-  font-family: 'Georgia', sans-serif;
+  /* font-family: var(--title-font); */
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h1, h2, h3 {
-  font-family: 'Georgia', sans-serif;
+  font-family: var(--title-font);
+  font-weight: 400;
   text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.6em;
 }
 
 section {
@@ -30,11 +40,26 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 1em;
+  padding: 2em;
 }
 
-.big {
-  font-size: 1.3em;
+#mlb2-3533771 div, #mlb2-3533771.ml-form-embedContainer .ml-form-embedWrapper {
+  background-color: transparent !important;
+  font-family: var(--main-font) !important;
+  font-size: 20px;
+}
+
+#mlb2-3533771.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p, #mlb2-3533771.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
+  font-family: var(--main-font) !important;
+  font-size: 20px !important;
+  font-weight: 200 !important;
+}
+
+#mlb2-3533771.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button, #mlb2-3533771.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
+  font-family: var(--main-font) !important;
+  /* font-size: 20px !important; */
+  font-weight: 500 !important;
+  background-color: var(--accent);
 }
 
 header {
@@ -94,12 +119,39 @@ div.links a{
   padding: 0.4em;
 }
 
+div.links a.blog{
+  width: auto;
+  margin-right: 0.5em;
+  height: 1.4em;
+  padding: 0.4em;
+  font-weight: 500;
+}
+
+
 div.links a:hover{
   background-color: var(--light);
+  color: black;
 }
 
 a, a:visited {
   color: inherit;
+}
+
+a.button {
+  background-color: var(--accent);
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  margin: 1em;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 1em;
+}
+
+a.button:hover {
+  filter: brightness(60%);
+  color: black;
 }
 
 #hello div {
@@ -122,7 +174,11 @@ section:nth-child(even) {
 }
 
 .wrap {
-  max-width: 800px;
+  max-width: 700px;
+}
+
+.center {
+  text-align: center;
 }
 
 blockquote {
