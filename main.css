@@ -43,6 +43,19 @@ section {
   padding: 2em;
 }
 
+#statement {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#statement div {
+  max-width: 500px;
+}
+
+#statement h1 {
+  text-align: left;
+}
+
 #mlb2-3533771 div, #mlb2-3533771.ml-form-embedContainer .ml-form-embedWrapper {
   background-color: transparent !important;
   font-family: var(--main-font) !important;
@@ -97,7 +110,7 @@ div#avatar {
   background-image: url("new_alice.jpg");
   background-size: cover;
   background-clip: border-box;
-  border: solid white 5px;
+  /* border: solid white 5px; */
   border-radius: 50%;
   margin: 1em;
 }
@@ -111,20 +124,20 @@ div#avatar img{
 div.links {
   display: flex;
   flex-direction: row;
+  justify-content: end;
+  flex-wrap: wrap;
 }
 
-div.links a{
-  width: 1.4em;
-  height: 1.4em;
-  padding: 0.4em;
-}
-
-div.links a.blog{
+div.links a {
   width: auto;
   margin-right: 0.5em;
   height: 1.4em;
   padding: 0.4em;
   font-weight: 500;
+}
+
+div.links a.square{
+  width: 1.4em;
 }
 
 
