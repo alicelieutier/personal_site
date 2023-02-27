@@ -10,6 +10,22 @@ function moonPhase(date) {
 document.getElementById('moon').innerText = moonPhase(new Date())
 
 
+const genCodeButton = document.getElementById('gen-code')
+const codeResult = document.getElementById('result-code')
+genCodeButton.addEventListener('click', () => {
+  // fetch https://random-word-api.herokuapp.com/word?length=5&number=3
+  fetch("https://random-word-api.herokuapp.com/word?length=5&number=3")
+  .then((response) => response.json())
+  .then((data) => {
+    // alert the result
+    codeResult.innerText = data.join('-')
+  })
+  .catch((error) => {
+    console.error("There has been a problem with the code generation:", error);
+  });
+})
+
+
 // testimonial carousels
 
 class Slide {

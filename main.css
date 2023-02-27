@@ -25,7 +25,7 @@ em {
 h1, h2, h3 {
   font-family: var(--title-font);
   font-weight: 400;
-  text-align: center;
+  /* text-align: center; */
 }
 
 h1 {
@@ -33,6 +33,10 @@ h1 {
 }
 h2 {
   font-size: 2.6em;
+}
+h3 {
+  font-size: 1.4em;
+  margin-bottom: 0em;
 }
 
 section {
@@ -150,6 +154,16 @@ a, a:visited {
   color: inherit;
 }
 
+span.interact {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+code {
+  background-color: var(--light);
+  color: black;
+}
+
 a.button {
   background-color: var(--accent);
   color: black;
@@ -181,7 +195,7 @@ section:nth-child(even) {
   color: white;
 }
 
-::selection, a:hover {
+::selection, a:hover, span.interact:hover {
   background-color: var(--accent);
   color: white;
 }
