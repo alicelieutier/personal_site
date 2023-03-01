@@ -22,7 +22,7 @@ em {
   font-weight: 500;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h1 pre {
   font-family: var(--title-font);
   font-weight: 400;
   /* text-align: center; */
@@ -50,10 +50,12 @@ section {
 #statement {
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #statement div {
   max-width: 500px;
+  margin: 2em;
 }
 
 #statement h1 {
