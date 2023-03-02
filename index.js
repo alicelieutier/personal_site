@@ -9,7 +9,7 @@ function moonPhase(date) {
 
 document.getElementById('moon').innerText = moonPhase(new Date())
 
-
+// generate code for audit
 const genCodeButton = document.getElementById('gen-code')
 const codeResult = document.getElementById('result-code')
 genCodeButton.addEventListener('click', () => {
@@ -25,9 +25,45 @@ genCodeButton.addEventListener('click', () => {
   });
 })
 
+// insta feed
+const instaSection = document.getElementById('instafeed');
+const feed = document.getElementById('feed');
+const HOUR_IN_MILLISECONDS = 1000*60*60
+
+async function showInstaFeed(div, callback) {
+  // fetch from behold + cache in local storage to avoid
+  // overusing
+  let posts = JSON.parse(localStorage.getItem('instaPosts'))
+  let cacheDate = localStorage.getItem('instaPostsDate')
+  if (posts == null || Date.now() - cacheDate > 12*HOUR_IN_MILLISECONDS) {
+    console.log('fetching instagram posts')
+    let response = await fetch("https://feeds.behold.so/mL2MHftJ3BTU8quhsp6a");
+    if (!response.ok) {
+      console.log('fetching failed, falling back on cached posts')
+      response = await fetch("/cached_insta_feed.json");
+    }
+    posts = await response.json()
+    localStorage.setItem('instaPosts', JSON.stringify(posts));
+    localStorage.setItem('instaPostsDate', Date.now());
+  }
+
+  for (let i = 0; i < posts.length; i++) {
+    const post = posts[i];
+    const element = document.createElement('div')
+    element.className = 'post'
+    element.innerHTML = `
+    <a href="${post.permalink}">
+      <img width="250" height="250" alt="${post.prunedCaption}" src="${post.mediaUrl}">
+    </a>
+    `
+    div.appendChild(element)
+  }
+  callback()
+}
+
+showInstaFeed(feed, () => instaSection.style.display = 'block')
 
 // testimonial carousels
-
 class Slide {
   constructor(htmlNode) {
     this.content = htmlNode

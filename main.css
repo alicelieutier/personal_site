@@ -47,6 +47,25 @@ section {
   padding: 2em 1em;
 }
 
+section#instafeed {
+  display: none;
+}
+
+section#instafeed #feed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section#instafeed #feed .post a{
+  display: block;
+  padding: 1em;
+}
+
+section#instafeed #feed .post img{
+  display: block;
+}
+
 #statement {
   flex-direction: row;
   flex-wrap: wrap;
