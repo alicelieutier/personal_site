@@ -2,6 +2,10 @@
 
 [alice.lieutier.me](http://alice.lieutier.me)
 
-Deploy by pushing to github.
+# Resources
 
-Check the docs [here](https://github.com/alicelieutier/personal_site/settings/pages).
+* [Behold](https://behold.so/) for the instagram feed
+* [MailerLite](https://www.mailerlite.com/) for the newletter subscription form
+
+
+Deploy by pushing to github.
