@@ -1,7 +1,7 @@
 :root {
   --accent: hsl(49, 96%, 52%);
-  --light: #f4f4f4;
-  --dark: #111316;
+  --light: #f4f1eb;
+  --dark: #161411;
   --main-font: 'Montserrat Alternates', sans-serif;
   --title-font: 'EB Garamond', serif;
 }
