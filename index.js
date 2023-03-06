@@ -12,13 +12,16 @@ document.getElementById('moon').innerText = moonPhase(new Date())
 // generate code for audit
 const genCodeButton = document.getElementById('gen-code')
 const codeResult = document.getElementById('result-code')
+const codeEmail = document.getElementById('report-email')
 genCodeButton.addEventListener('click', () => {
   // fetch https://random-word-api.herokuapp.com/word?length=5&number=3
   fetch("https://random-word-api.herokuapp.com/word?length=5&number=3")
   .then((response) => response.json())
   .then((data) => {
     // alert the result
-    codeResult.innerText = data.join('-')
+    const teamCode = data.join('-')
+    codeResult.innerText = teamCode
+    codeEmail.href = `mailto:alice@lieutier.me?subject=Requesting%20a%20report%20for%20team%20code:%20${teamCode}`
   })
   .catch((error) => {
     console.error("There has been a problem with the code generation:", error);
