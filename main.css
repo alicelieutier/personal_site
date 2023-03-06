@@ -39,6 +39,19 @@ h3 {
   margin-bottom: 0em;
 }
 
+#instalinks h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+#instalinks .logo {
+  width: 60px;
+  /* background-color: var(--light); */
+  display: block;
+  margin: auto;
+}
+
+
 section {
   display: flex;
   flex-direction: column;
@@ -51,18 +64,23 @@ section#instafeed {
   display: none;
 }
 
-section#instafeed #feed {
+section#instalinks {
+  padding: 0.5em;
+  min-height: 80vh;
+}
+
+#feed {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-section#instafeed #feed .post a{
+.post a{
   display: block;
   padding: 1em;
 }
 
-section#instafeed #feed .post img{
+.post img{
   display: block;
 }
 
