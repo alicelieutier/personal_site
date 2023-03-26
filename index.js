@@ -64,7 +64,7 @@ async function showInstaFeed(div, callback) {
   callback()
 }
 
-showInstaFeed(feed, () => instaSection.style.display = 'block')
+showInstaFeed(feed, () => instaSection.style.display = 'flex')
 
 // testimonial carousels
 class Slide {
