@@ -1,0 +1,17 @@
+#fire {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#fire div {
+  flex: 1;
+  margin: 2em;
+  max-width: 1800px;
+}
+
+#fire img {
+  max-height: 80vh;
+  margin: 0 1em;
+}
